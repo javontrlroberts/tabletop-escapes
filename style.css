@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;700&family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Root Styling */
+
+:root {
+
+    /* Colors */
+    --cls-primary-deep-forest-green: #2E4D3A;
+    --cls-secondary-warm-gold: #D4A017;
+    --cls-accent-crimson-red: #B33A3A;
+    
+    /* Font Family */
+    --ff-heading: "Eagle Lake", serif;
+    --ff-body: "Cormorant Upright", serif;
+
+    /* Font Weight */
+    --fw-light-300: 300;
+    --fw-regular-400: 400;
+    --fw-bold-700: 700;
+
+}
+
+/* Universal Styling */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cls-primary-deep-forest-green);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: var(--cls-accent-crimson-red);
+    min-width: 62.5rem;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* Typography */
+
+h1 {
+    font-family: var(--ff-heading);
+    font-size: 6.25rem;
+    text-align: center;
+    text-shadow: 2px 2px 0 #000;
+    color: var(--cls-secondary-warm-gold);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2.food-title {
+    margin-bottom: 0;
+}
+
+h2.adventure {
+    margin-top: 0;
+}
+
+h2 {
+    font-family: "MedievalSharp", cursive;
+    font-size: 4.0625rem;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.25rem;
+    color: #b33a3af3;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+}
+
+span.page-title {
+    border: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    span.page-title {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    span.page-title {
+        display: block;
+    }
+}
+
+span {
+    text-transform: capitalize;
+    color: #D4A017;
+}
+
+.snack-menu {
+    color: #000000c2;
+    font-size: 1.75rem;
+    text-align: justify;
+    text-shadow: 2px 2px 0 #b33a3ac5;
+    line-height: 1.75;
+    transition: 1s;
+    padding-left: 5.03125rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .snack-menu {
+        display: block;
+        width: 65ch;
+        margin-left: -8.125rem;
+    }
+}
+
+.snack-menu:hover {
+    cursor: pointer;
+    font-size: 1.875rem;
+    text-shadow: 2px 2px 0 #b33a3a;
+
+}
+
+p {
+    color: #0000008e;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #b33a3a9c;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p.food-descr {
+    margin-top: 0;
+    color: #000000b2;
+    font-size: 1.75rem;
+    text-align: justify;
+    text-shadow: 2px 2px 0 #d49e17a9;
+    text-transform: capitalize;
+    line-height: 1.75;
+}
+
+@media only screen and (max-width: 1024px) {
+    p.food-descr {
+        width: 50ch;
+        margin-inline: auto;
+    }
+}
+
+
+
+h4 {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2.125rem;
+    color: var(--cls-secondary-warm-gold);
+    text-shadow: 4px 4px 0 #000;
+    text-align: center;  
+}
+
+h4.notices {
+    font-size: 1.125rem;
+}
+
+/* Links */
+
+nav a {
+    color: var(--cls-accent-crimson-red);
+    text-decoration: none;
+    font-size: 2.8125rem;
+    text-shadow: 2px 2px 0 #000;
+}
+
+nav a:hover {
+    color: #b33a3ad3;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+.food-title a,
+a#staff-title,
+a#contact-us {
+    text-decoration: none;
+    color: var(--cls-accent-crimson-red);
+}
+
+.email-us {
+    color: var(--cls-accent-crimson-red);
+    text-shadow: 3px 3px 3px #000;
+}
+
+a.privacy {
+    text-decoration: none;
+    color: #BB5377;
+}
+
+/* Icons */
+
+div.flex-us svg {
+    fill: #b33a3ae3;
+    height: 9.375rem;
+    width: 9.375rem;
+}
+
+/* Navigation */
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2.5rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    ul {
+        justify-content: center;
+        gap: 3.125rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    ul {
+        justify-content: center;
+        gap: 3.125rem;
+    }
+}
+
+iframe {
+    width: 100%;
+}
+
+/* Images */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.rpg-games {
+    height: 80%;
+}
+
+.poster {
+    display: block;
+}
+
+.goodies {
+    max-width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.members img {
+    height: 70%;
+}
+
+img.qr-code {
+    height: 31.25rem;
+    width: 31.25rem;
+    border-radius: 20%;
+    border: 7px solid #BB5377;
+}
+
+/* Layout Styling */
+
+.title {
+    width: 70%;
+    margin-top: 0;
+    background-image: url(./assets/images/Tabletop\ logo.jpg);
+    background-size: 45%;
+    width: 100%;
+}
+
+.wrapper {
+    width: 62.5rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid {
+        display: block;
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .overview {
+        display: block;
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+
+.rules {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules ol li {
+    color: #000000d3;
+    font-family: "Eagle Lake", serif;
+}
+
+li span {
+    color: var(--cls-accent-crimson-red);
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .team {
+        display: block;
+        width: 65%;
+        margin-inline: auto;
+    }
+}
+
+.qr {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.flex-us {
+    display: flex;
+    justify-content: center;
+    gap: 1.5625rem;
+}
+
+.wrap-up {
+    padding: 0 3.125rem 3.125rem;
+    background-image: url(./assets/images/footer\ background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+div.member {
+    height: 90%;
+}
+
+div.team p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
